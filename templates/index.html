@@ -100,7 +100,8 @@ section {
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-        // change local host if/when hosting this site publically
+        // change local host once a domain is obtained which can be used for this
+        // necessary because what is the point of a url shortner if the website it is hosted on has a long url
         $('h2').html("localhost:8000/"+data)
       }
     });
