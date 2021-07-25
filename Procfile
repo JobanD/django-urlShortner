@@ -1,1 +1,1 @@
-web: gunicorn core.wsgi --log-file=-
+web: gunicorn urlshortner.wsgi:application --log-file=-
